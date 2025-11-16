@@ -69,6 +69,19 @@
    eas build:download --platform ios
    ```
 
+### Common Expo CLI Commands
+
+The following is a list of common commands that you will use with Expo CLI while developing your app:
+
+| Command | Description |
+|---|---|
+| `npx expo start` | Starts the development server (whether you are using a development build or Expo Go). |
+| `npx expo prebuild` | Generates native Android and iOS directories using Prebuild. |
+| `npx expo run:android` | Compiles native Android app locally. |
+| `npx expo run:ios` | Compiles native iOS app locally. |
+| `npx expo install package-name` | Used to install a new library or validate and update specific libraries in your project by adding `--fix` option to this command. |
+| `npx expo lint` | Setup and configures ESLint. If ESLint is already configured, this command will lint your project files. |
+
 ## Troubleshooting
 
 **Android: "Can't install app"**
