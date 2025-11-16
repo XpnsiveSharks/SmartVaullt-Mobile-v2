@@ -9,7 +9,7 @@
 ## Option 1: Download from EAS Dashboard (Easiest)
 
 1. **Get Access**
-   - Ask your team lead for the Expo account credentials or build link
+   - Ask your team (sharks) for the Expo account credentials or build link
 
 2. **Visit the Build Page**
    - Go to [expo.dev](https://expo.dev) and log in
