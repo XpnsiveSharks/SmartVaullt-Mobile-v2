@@ -1,50 +1,94 @@
-# Welcome to your Expo app 👋
+# How to Download and Install the App (EAS Build)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## For Team Members
 
-## Get started
+### Prerequisites
+- A smartphone (iOS or Android)
+- Internet connection
 
-1. Install dependencies
+## Option 1: Download from EAS Dashboard (Easiest)
 
+1. **Get Access**
+   - Ask your team lead for the Expo account credentials or build link
+
+2. **Visit the Build Page**
+   - Go to [expo.dev](https://expo.dev) and log in
+   - Navigate to the project
+   - Click on **"Builds"** in the sidebar
+
+3. **Download Your Build**
+   
+   **For Android:**
+   - Find the latest Android build
+   - Click **"Download"** to get the APK file
+   - Transfer to your phone and install
+   - (You may need to enable "Install from Unknown Sources" in Settings)
+
+   **For iOS:**
+   - Find the latest iOS build
+   - Click on the build to see installation options
+   - If using TestFlight:
+     - Install TestFlight app from App Store
+     - Open the invitation link
+     - Install the app through TestFlight
+   - If using direct install:
+     - Scan the QR code with your camera
+     - Follow the installation prompt
+
+## Option 2: Using QR Code
+
+1. Your team (sharks) will share a QR code from the build page
+2. **For Android:** Scan with any QR code scanner or camera
+3. **For iOS:** Scan with the camera app
+4. Follow the installation link
+
+## Option 3: Using EAS CLI (For Developers)
+
+1. **Install EAS CLI**
    ```bash
-   npm install
+   npm install -g eas-cli
    ```
 
-2. Start the app
-
+2. **Log in**
    ```bash
-   npx expo start
+   eas login
+   ```
+   (Ask sharks for credentials)
+
+3. **View Available Builds**
+   ```bash
+   eas build:list
    ```
 
-In the output, you'll find options to open the app in a
+4. **Download the Latest Build**
+   ```bash
+   # For Android
+   eas build:download --platform android
+   
+   # For iOS
+   eas build:download --platform ios
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Troubleshooting
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+**Android: "Can't install app"**
+- Go to Settings > Security > Enable "Install from Unknown Sources"
+- Make sure you have enough storage space
 
-## Get a fresh project
+**Build link expired**
+- Request a new build link from your team lead
+- Builds remain available for 30 days by default
 
-When you're ready, run:
+**QR code not working**
+- Try manually opening the link shown next to the QR code
+- Ensure you have a stable internet connection
 
-```bash
-npm run reset-project
-```
+## Getting Help
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Contact your team lead for:
+  - Account access
+  - Build links
+  - Device registration (iOS)
+- Check [EAS Build Docs](https://docs.expo.dev/build/introduction/)
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
