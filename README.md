@@ -1,5 +1,16 @@
 # How to Download and Install the App (EAS Build)
 
+## Table of Contents
+
+- [For Team Members](#for-team-members)
+  - [Prerequisites](#prerequisites)
+- [Option 1: Download from EAS Dashboard (Easiest)](#option-1-download-from-eas-dashboard-easiest)
+- [Option 2: Using QR Code](#option-2-using-qr-code)
+- [Option 3: Using EAS CLI (For Developers)](#option-3-using-eas-cli-for-developers)
+  - [Common Expo CLI Commands](#common-expo-cli-commands)
+- [Troubleshooting](#troubleshooting)
+- [Getting Help](#getting-help)
+
 ## For Team Members
 
 ### Prerequisites
