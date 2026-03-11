@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production / Build
+.expo/
+web-build/
+dist/
+
+# System Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment Variables (CRITICAL: Do not commit keys!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# React Native / Metro
+.metro/
+coverage/
+
+# Expo - if you ever run 'npx expo prebuild', these folders are generated.
+# If you are strictly "Managed Workflow", keep these ignored.
+# If you customized native code, UNCOMMENT these lines to commit them.
+# android/
+# ios/
